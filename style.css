@@ -1,0 +1,117 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+
+* {
+  color: white;
+}
+
+p, h1 {
+  margin: 0;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin-right: .5rem;
+  margin-left: .5rem;
+  padding: 1rem;
+}
+
+.body-overlay {
+  background: url(./nature.jpg);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+h1.page-title {
+  text-shadow: 1px 1px 10px black;
+  margin-top: 1rem;
+}
+
+.window {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+
+  width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.6);
+}
+
+.window-header {
+  padding: 0.6rem;
+}
+
+.window-header p {
+
+}
+
+.window-body-wrapper {
+  padding:  0 0.5rem 0.5rem 0.5rem;
+}
+
+.window-body {
+  background: white;
+  width: 100%;
+  height: 200px;
+}
+
+
+.window-header .buttons {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.window-header .buttons .button {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.window-header .buttons .button.close {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  border-bottom-right-radius: 5px;
+}
+
+.window-header .buttons .button.minimize {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  border-bottom-left-radius: 5px;
+}
+
+.window-header .buttons .button.maximize {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
