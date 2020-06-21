@@ -12,7 +12,8 @@ body {
   color: white;
 }
 
-p, h1 {
+p,
+h1 {
   margin: 0;
 }
 
@@ -30,8 +31,8 @@ p, h1 {
 }
 
 .navbar ul li {
-  margin-right: .5rem;
-  margin-left: .5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   padding: 1rem;
 }
 
@@ -67,24 +68,36 @@ h1.page-title {
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.6);
 }
 
+.strips {
+  background: repeating-linear-gradient(
+    45deg,
+    transpaent -70px,
+    transpaent 0px,
+    rgba(255, 255, 255, 0.05) 5px,
+    rgba(255, 255, 255, 0.05) 117px
+  );
+}
+
 .window-header {
   padding: 0.6rem;
 }
 
 .window-header p {
-
+  color: black;
+  text-shadow: 0 0 14px white;
 }
 
 .window-body-wrapper {
-  padding:  0 0.5rem 0.5rem 0.5rem;
+  padding: 0 0.5rem 0.5rem 0.5rem;
 }
 
 .window-body {
   background: white;
   width: 100%;
-  height: 200px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
-
 
 .window-header .buttons {
   display: flex;
@@ -97,6 +110,24 @@ h1.page-title {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+
+.window-header .buttons .button:hover {
+  background: repeating-linear-gradient(
+    rgba(255, 255, 255, 0.6) 6px,
+    rgba(0, 0, 0, 0.3) 15px,
+    rgba(255, 255, 255, 0.6) 27px
+  );
+}
+
+
+.window-header .buttons .button.close:hover {
+  background: repeating-linear-gradient(
+    rgba(255, 255, 255, 0.6) 6px,
+    rgba(255, 0, 0, 0.7) 15px,
+    rgba(255, 255, 255, 0.6) 27px
+  );
 }
 
 .window-header .buttons .button.close {
